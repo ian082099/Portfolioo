@@ -11,6 +11,7 @@
 body, html {
     overflow-x: hidden;
     width: 100%;
+ 
 }
 
 /* Fix navbar and footer breaking layout width on mobile */
@@ -23,9 +24,9 @@ nav, footer {
     margin-right: 0 !important;
 }
 
-/* Media Query for Tablets and Mobile Phones (Max-width: 768px) */
+/* --- RESPONSIVE MEDIA QUERY (Max-width: 768px) --- */
 @media (max-width: 768px) {
-    /* Stack the Hero section vertically */
+    /* 1. Stack the Hero section vertically */
     .hero-flex {
         flex-direction: column-reverse;
         text-align: center;
@@ -36,26 +37,33 @@ nav, footer {
         text-align: center !important;
     }
 
-    /* Scale down huge headings for mobile screens */
+    /* 2. Scale down huge headings for mobile screens */
     h1 {
         font-size: 2.2rem !important;
     }
 
-    /* Stack the About Me grid layout into a single column */
-    .about-container > div[style*="grid-template-columns"] {
+    /* 3. Stack ALL grid layouts into a single column (Added this) */
+    .contact-grid, 
+    .stats-grid, 
+    .dual-video-grid, 
+    .about-container div[style*="grid-template-columns"] {
         grid-template-columns: 1fr !important;
     }
 
-    /* Stack profile card layout */
+    /* 4. Stack profile card layout */
     .profile-card {
         flex-direction: column;
         text-align: center;
     }
 
-    /* Adjust navigation links spacing for smaller screens */
+    /* 5. Adjust navigation links spacing for smaller screens */
+    nav {
+        padding: 15px 0;
+    }
+    
     nav a {
-        margin: 0 12px;
-        font-size: 0.9rem;
+        margin: 0 8px !important;
+        font-size: 0.85rem;
     }
 }
         
