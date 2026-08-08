@@ -5,6 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mark Christian Cunanan | Portfolio</title>
     <style>
+    /* --- RESPONSIVE FIXES --- */
+
+/* Prevent horizontal overflow bugs on mobile */
+body, html {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+/* Fix navbar and footer breaking layout width on mobile */
+nav, footer {
+    width: 100% !important;
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Media Query for Tablets and Mobile Phones (Max-width: 768px) */
+@media (max-width: 768px) {
+    /* Stack the Hero section vertically */
+    .hero-flex {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .hero-flex .hero-photo {
+        text-align: center !important;
+    }
+
+    /* Scale down huge headings for mobile screens */
+    h1 {
+        font-size: 2.2rem !important;
+    }
+
+    /* Stack the About Me grid layout into a single column */
+    .about-container > div[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Stack profile card layout */
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Adjust navigation links spacing for smaller screens */
+    nav a {
+        margin: 0 12px;
+        font-size: 0.9rem;
+    }
+}
+        
         /* --- COMBINED STYLES FROM ALL PAGES --- */
         * {
             margin: 0;
