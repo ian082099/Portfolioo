@@ -392,7 +392,12 @@ nav, footer {
 
         .card-handle {
             font-size: 1.1rem;
-            color: #777;
+            color: #000000;
+            transition: color 0.2s ease;
+        }
+
+        .card-handle:hover {
+            color: #3498db;
         }
 
         .interview-wrapper {
@@ -458,7 +463,9 @@ nav, footer {
                 <p style="font-size: 1rem; color: #333; line-height: 1.6; margin-top: 15px;">
                     Developed a first-of-its-kind <strong>Passive Sensing Framework</strong> that uses ordinary Wi-Fi routers to detect human movement through walls without cameras or wearable devices.
                 </p>
-
+                <div class="video-container" style="margin: 20px 0;">
+                    <iframe src="https://drive.google.com/file/d/19Y2ywgp4SMrsPa4emA3yWYw1v0hjwxrC/preview" allow="autoplay" allowfullscreen></iframe>
+                </div>
                 <div style="background: #f8fafc; padding: 15px; border-radius: 4px; margin: 15px 0; border: 1px dashed #cbd5e1;">
                     <h4 style="margin: 0 0 10px 0; font-size: 0.9rem; color: #2c3e50;">Key Innovation: Signal Reconstruction Pipeline</h4>
                     <ul style="font-size: 0.9rem; color: #666; padding-left: 20px;">
@@ -704,10 +711,10 @@ nav, footer {
                         <span class="card-value">0961 734 2001</span>
                     </div>
 
-                    <div class="contact-card">
+                    <a href="mailto:iancunanan81@gmail.com" class="contact-card link-card">
                         <span class="card-label">Email</span>
-                        <span class="card-value">iancunanan81@gmail.com</span>
-                    </div>
+                        <span class="card-handle">iancunanan81@gmail.com</span>
+                    </a>
 
                     <a href="https://www.facebook.com/mark.christian.cunanan.2024/" target="_blank" class="contact-card link-card">
                         <span class="card-label">Facebook</span>
@@ -718,11 +725,16 @@ nav, footer {
                         <span class="card-label">LinkedIn</span>
                         <span class="card-handle">MarkCunanan-Dev</span>
                     </a>
+
+                    <a href="https://github.com/marcianonly" target="_blank" class="contact-card link-card">
+                        <span class="card-label">GitHub</span>
+                        <span class="card-handle">marcianonly</span>
+                    </a>
                 </div>
 
                 <section class="interview-wrapper">
-                    <h2 class="call-heading" style="color:#3498db">Looking for your next IT team member?</h2>
-                    <p class="call-subheading" style="color: #e2e8f0">I am open to new opportunities and ready to discuss how my skills can benefit your company.</p>
+                    <h2 class="call-heading" style="color:#3498db">Looking to add to your tech team?</h2><br><br>
+                    <p class="call-subheading" style="color: #e2e8f0">I am open to new opportunities and ready to discuss how my skills can benefit your company.</p><br>
                     <a href="mailto:iancunanan81@gmail.com" class="btn btn-secondary" style="background: #2c3e50; color: #fff; padding: 15px 40px;">Initiate Conversation</a>
                 </section>
             </div>
