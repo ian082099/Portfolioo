@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mark Christian Cunanan | Portfolio</title>
     <style>
-    /* --- RESPONSIVE FIXES --- */
+        /* --- RESPONSIVE FIXES --- */
 
 /* Prevent horizontal overflow bugs on mobile */
 body, html {
     overflow-x: hidden;
     width: 100%;
- 
 }
 
 /* Fix navbar and footer breaking layout width on mobile */
@@ -24,9 +23,9 @@ nav, footer {
     margin-right: 0 !important;
 }
 
-/* --- RESPONSIVE MEDIA QUERY (Max-width: 768px) --- */
+/* Media Query for Tablets and Mobile Phones (Max-width: 768px) */
 @media (max-width: 768px) {
-    /* 1. Stack the Hero section vertically */
+    /* Stack the Hero section vertically */
     .hero-flex {
         flex-direction: column-reverse;
         text-align: center;
@@ -37,36 +36,28 @@ nav, footer {
         text-align: center !important;
     }
 
-    /* 2. Scale down huge headings for mobile screens */
+    /* Scale down huge headings for mobile screens */
     h1 {
         font-size: 2.2rem !important;
     }
 
-    /* 3. Stack ALL grid layouts into a single column (Added this) */
-    .contact-grid, 
-    .stats-grid, 
-    .dual-video-grid, 
-    .about-container div[style*="grid-template-columns"] {
+    /* Stack the About Me grid layout into a single column */
+    .about-container > div[style*="grid-template-columns"] {
         grid-template-columns: 1fr !important;
     }
 
-    /* 4. Stack profile card layout */
+    /* Stack profile card layout */
     .profile-card {
         flex-direction: column;
         text-align: center;
     }
 
-    /* 5. Adjust navigation links spacing for smaller screens */
-    nav {
-        padding: 15px 0;
-    }
-    
+    /* Adjust navigation links spacing for smaller screens */
     nav a {
-        margin: 0 8px !important;
-        font-size: 0.85rem;
+        margin: 0 12px;
+        font-size: 0.9rem;
     }
 }
-        
         /* --- COMBINED STYLES FROM ALL PAGES --- */
         * {
             margin: 0;
@@ -447,7 +438,7 @@ nav, footer {
                 <h1>Turning Complex Logic into Simple Solutions</h1>
                 <p class="hero-desc">
                     Hi, I'm <strong style="color:#3498db;">Mark Christian Cunanan</strong>. 
-                    Computer Science Fresh graduate from Pamantasan ng Lungsod ng Muntinlupa, specializing in full-stack development, backend systems, and database management.
+                   A recent Computer Science graduate from Pamantasan ng Lungsod ng Muntinlupa, specializing in full-stack development, backend systems, and database management.
                 </p>
                 <div class="btn-group">
                     <button onclick="switchPage('portfolio', document.querySelectorAll('nav a')[1])" class="btn btn-primary">Explore Projects</button>
@@ -500,8 +491,8 @@ nav, footer {
             <section class="what-i-do">
                 <h2 style="color: #2c3e50; margin-top: 0;">What I Do</h2>
                 <p style="color: #64748b; line-height: 1.8; font-size: 1.1rem;">
-                    I specialize in bridging the gap between hardware and software. Whether I'm designing a 
-                    <strong>CITCS Helpdesk</strong> integrated system or managing <strong>relational databases</strong>, 
+                    I specialize in bridging the gap between hardware and software.Whether I'm designing an integrated
+                    <strong>CITCS Helpdesk</strong> system or managing <strong>relational databases</strong>, 
                     my goal is to create clean, optimized, and user-centric applications.
                 </p>
             </section>
@@ -548,7 +539,7 @@ nav, footer {
                     <div class="video-container">
                         <iframe src="https://drive.google.com/file/d/1JrBPIpgrIGtZDpfJfEqROZLmHqxSPOZm/preview" allowfullscreen></iframe>
                     </div>
-                    <p style="color: #555; line-height: 1.6;">A comprehensive system designed to manage and connect university alumni data.</p>
+                    <p style="color: #555; line-height: 1.6;">A comprehensive system designed to manage university alumni data and facilitate networking.</p>
                     <a href="https://drive.google.com/drive/folders/1NPGy6jLrVqRXoo_Tz7WF7Ge076hnAbRC?usp=sharing" target="_blank" class="btn" style="margin-top: 15px;  background: #3498db; color: #fff;">View Source Code</a>
                 </div>
 
@@ -601,7 +592,7 @@ nav, footer {
                         <div class="info-card">
                             <h3 class="card-heading">Professional Summary</h3>
                             <p style="line-height: 1.8;">
-                                Dedicated Computer Science student with a strong foundation in PHP, Java, and Database Management. I am committed to leveraging my technical education and problem-solving skills to contribute to a dynamic engineering team. My objective is to bridge the gap between academic theory and industry-standard software development.
+                                Dedicated Computer Science graduate with a strong foundation in PHP, Java, and Database Management. I am committed to leveraging my technical education and problem-solving skills to contribute to a dynamic engineering team. My objective is to bridge the gap between academic theory and industry-standard software development.
                             </p>
                         </div>
 
